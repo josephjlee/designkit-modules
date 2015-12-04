@@ -1,6 +1,6 @@
 {
   "name": "designkit",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "description": "A collection of base element styles and utilities.",
   "repository": {
     "type": "git",
