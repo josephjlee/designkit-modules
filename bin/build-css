@@ -4,4 +4,5 @@ node-sass \
   --include-path node_modules/bourbon/app/assets/stylesheets \
   --include-path node_modules/designkit-global/src \
   --include-path node_modules/designkit-typography/src \
+  --include-path node_modules/designkit-spinners/src \
   index.scss designkit.css
