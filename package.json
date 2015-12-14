@@ -1,6 +1,6 @@
 {
   "name": "designkit",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "A collection of base element styles and utilities.",
   "repository": {
     "type": "git",
@@ -17,7 +17,8 @@
   "homepage": "https://github.com/rightscale-design/designkit#readme",
   "devDependencies": {
     "bourbon": "^4.2.6",
-    "designkit-global": "0.0.1",
+    "designkit-global": "0.0.2",
+    "designkit-icons": "0.0.1",
     "designkit-spinners": "0.0.6",
     "designkit-typography": "0.0.3",
     "http-server": "^0.8.5",
