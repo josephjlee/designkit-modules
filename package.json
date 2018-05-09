@@ -1,34 +1,13 @@
 {
-  "name": "designkit",
-  "version": "0.0.5",
-  "description": "A collection of base element styles and utilities.",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/rightscale-design/designkit.git"
-  },
-  "author": {
-    "name": "Jason Melgoza",
-    "email": "jason@rightscale.com"
-  },
+  "name": "designkit-modules",
+  "version": "1.0.0",
+  "description": "A collection of base element styles and utilities used at RightScale",
+  "author": "RightScale, Inc.",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/rightscale-design/designkit/issues"
-  },
-  "homepage": "https://github.com/rightscale-design/designkit#readme",
-  "devDependencies": {
-    "bourbon": "^4.2.6",
-    "designkit-global": "0.0.2",
-    "designkit-icons": "0.0.1",
-    "designkit-spinners": "0.0.6",
-    "designkit-typography": "0.0.3",
-    "http-server": "^0.8.5",
-    "node-sass": "^3.4.2",
-    "nodemon": "^1.8.1"
-  },
   "scripts": {
-    "build-css": "./bin/build-css",
-    "build-min": "./bin/build-min",
-    "watch-css": "./bin/watch-css",
-    "serve": "./bin/http-server"
+    "start": "serve -o"
+  },
+  "devDependencies": {
+    "serve": "^6.0.6"
   }
 }
