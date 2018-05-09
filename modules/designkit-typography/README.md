@@ -1,5 +1,14 @@
-# designkit-typography
-1.1.3
+<p align="center">
+  <h3 align="center">Design Kit Modules</h3>
+</p>
+
+<br>
+
+<h3>designkit-typography <span>v1.1.3</span></h3>
+
+[![npm version](https://img.shields.io/npm/v/designkit-typography.svg)](https://www.npmjs.org/package/designkit-typography)
+
+<br>
 
 Sass module for typography at RightScale.
 
@@ -7,6 +16,10 @@ Sass module for typography at RightScale.
 ```
 npm i --save designkit-typography
 ```
+
+## Demos
+
+
 
 ## CSS
 
@@ -262,7 +275,7 @@ hr {
 
 ## Author
 
-Jason Melgoza
+[object Object]
 
 ## License
 
