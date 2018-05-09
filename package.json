@@ -3,11 +3,5 @@
   "version": "1.0.0",
   "description": "A collection of base element styles and utilities used at RightScale",
   "author": "RightScale, Inc.",
-  "license": "MIT",
-  "scripts": {
-    "start": "serve -o"
-  },
-  "devDependencies": {
-    "serve": "^6.0.6"
-  }
+  "license": "MIT"
 }
