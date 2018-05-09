@@ -1,14 +1,13 @@
 <p align="center">
   <h3 align="center">Design Kit Modules</h3>
+  <p align="center">A collection of base element styles and utilities.</p>
 </p>
 
 <br>
 
-<h3>designkit-typography <span>v1.1.3</span></h3>
+<h1>designkit-typography</h1>
 
-[![npm version](https://img.shields.io/npm/v/designkit-typography.svg)](https://www.npmjs.org/package/designkit-typography)
-
-<br>
+[![npm](https://img.shields.io/npm/v/designkit-typography.svg)](https://www.npmjs.com/package/designkit-typography)
 
 Sass module for typography at RightScale.
 
