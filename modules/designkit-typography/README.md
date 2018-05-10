@@ -2,7 +2,7 @@
 
 A Sass module for typography used in RightScale apps.
 
-[![npm](https://img.shields.io/npm/v/designkit-designkit-typography.svg)](https://www.npmjs.com/package/designkit-typography)
+[![npm](https://img.shields.io/npm/v/designkit-typography.svg)](https://www.npmjs.com/package/designkit-typography)
 
 <br />
 
