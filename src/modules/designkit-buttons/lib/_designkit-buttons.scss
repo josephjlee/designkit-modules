@@ -1,0 +1,254 @@
+// Mixins
+@mixin btn-border-color {
+  border-color: rgba(#1e1e1e, .2)
+  rgba(#1e1e1e, .2)
+  rgba(#000, .25);
+}
+
+@mixin btn-box-shadow {
+  box-shadow: inset 0 1px 0 rgba(#fff, .25),
+  0 1px 1px rgba(#000, .15);
+}
+
+@mixin btn-border-color-hover {
+  border-color: rgba(#1e1e1e, .35)
+  rgba(#1e1e1e, .35)
+  rgba(#000, .4);
+}
+
+@mixin btn-box-shadow-hover {
+  box-shadow: inset 0 1px 0 rgba(#fff, .25),
+  0 1px 1px rgba(#000, .15),
+  inset 0 -20px 65px -40px rgba(#000, .9);
+}
+
+@mixin btn-box-shadow-active {
+  box-shadow: inset 0 1px 2px rgba(#000, .1),
+  inset 0 2px 3px rgba(#000, .25),
+  0 1px 1px rgba(#000, .15),
+  inset 0 -20px 65px -40px rgba(#000, .9);
+}
+
+// Global
+.btn {
+  position: relative;
+  display: inline-block;
+  -webkit-appearance: none; // Corrects inability to style clickable `input` types in iOS.
+  padding: 10px 15px;
+  font-size: 13px;
+  font-weight: bold;
+  line-height: 1;
+  color: #444;
+  text-decoration: none;
+  text-shadow: none;
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+  user-select: none;
+  background-repeat: repeat-x;
+  background-position: -1px -1px;
+  background-size: 110% 110%;
+  background-color: #eee;
+  background-image: linear-gradient(#fcfcfc, #eee);
+  border: 1px solid rgba(27,31,35,0.2);
+  border-radius: 2px;
+  transition: opacity .2s ease-out;
+
+  &:focus {
+    outline: none;
+  }
+
+  &:hover,
+  &:active {
+    text-decoration: none;
+  }
+
+  &:disabled,
+  &.disabled {
+    &,
+    &:hover {
+      cursor: default;
+      cursor: not-allowed;
+      background-image: none;
+      border-color: rgba(#141414, .2);
+      box-shadow: none;
+      opacity: .65;
+    }
+  }
+}
+
+// Base theme
+.btn {
+  @include btn-border-color;
+  @include btn-box-shadow;
+  &:focus {
+    @include btn-border-color;
+  }
+  &:hover,
+  &.hover,
+  &:active,
+  &.active {
+    @include btn-border-color-hover;
+    @include btn-box-shadow-hover;
+  }
+
+  &:active,
+  &.active {
+    @include btn-box-shadow-active;
+  }
+}
+
+// Sizes
+.btn {
+  &.btn-sm {
+    padding: 2px 10px;
+    font-size: 12px;
+    line-height: 20px;
+  }
+  &.btn-lg {
+    padding: 10px 16px;
+    font-size: 15px;
+    line-height: 1.3333333;
+  }
+}
+
+// Default
+.btn-default {
+  color: #57626c;
+  background-color: #e2e4e6;
+  background-image: linear-gradient(#fff, #e2e4e6);
+
+  &:hover,
+  &.hover,
+  &:active,
+  &.active  {
+    color: #57626c;
+  }
+
+  &:disabled,
+  &.disabled {
+    &,
+    &:hover {
+      background-color: #e2e4e6;
+      border-color: rgba(#141414, .2);
+    }
+  }
+}
+
+// Primary
+.btn-primary {
+  color: #fff;
+  background-color: #0871d4;
+
+  background-image: linear-gradient(#0f86f6, #0871d4);
+
+  &:hover,
+  &.hover,
+  &:active,
+  &.active  {
+    background-color: #0871d4;
+
+    background-image: linear-gradient(#0f86f6, #0871d4);
+  }
+
+  &:disabled,
+  &.disabled {
+    &,
+    &:hover {
+      background-color: #0871d4;
+      border-color: rgba(#141414, .2);
+    }
+  }
+}
+
+// Success
+.btn-success {
+  color: #fff;
+  background-color: #5fb000;
+
+  background-image: linear-gradient(#70cf00, #59a500);
+
+  &:hover,
+  &.hover,
+  &:active,
+  &.active  {
+    background-color: #5fb000;
+
+    background-image: linear-gradient(#6dca00, #4c8c00);
+  }
+
+  &:disabled,
+  &.disabled {
+    &,
+    &:hover {
+      background-color: #5fb000;
+      border-color: rgba(#141414, .2);
+    }
+  }
+}
+
+// Danger
+.btn-danger {
+  color: #fff;
+  background-color: #d82f2f;
+
+  background-image: linear-gradient(#d82f2f, #b72323);
+
+  &:hover,
+  &.hover,
+  &:active,
+  &.active  {
+    background-color: #d82f2f;
+
+    background-image: linear-gradient(#d41414, #a60f0f);
+  }
+
+  &:disabled,
+  &.disabled {
+    &,
+    &:hover {
+      background-color: #d82f2f;
+      border-color: rgba(#141414, .2);
+    }
+  }
+}
+
+// Button Groups
+.btn-group {
+  display: inline-block;
+  vertical-align: middle;
+  &::before,
+  &::after {
+    display: table;
+    content: "";
+  }
+  .btn {
+    position: relative;
+    float: left;
+    &:not(:first-child):not(:last-child) {
+      border-radius: 0;
+    }
+    &:last-child:not(:first-child) {
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
+    }
+    &:first-child:not(:last-child) {
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
+    }
+    &:hover,
+    &:active {
+      z-index: 2;
+    }
+  }
+  .btn + .btn {
+    margin-left: -1px;
+  }
+}
+
+// Button Toolbar
+.btn-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
